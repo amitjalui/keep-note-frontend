@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import './globals.css';
+import '../styles/globals.css'
 
 export const metadata: Metadata = {
   title: 'Keep Note',
@@ -14,7 +14,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        root layout
         {children}
       </body>
     </html>
