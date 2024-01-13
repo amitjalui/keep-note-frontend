@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <Nav>
       {/* LOGO OR HAMBURGER ICON */}
-      <div className="logo">
+      <div>
         <LogoImg 
           src={logo.logo3_3}
           alt='logo'

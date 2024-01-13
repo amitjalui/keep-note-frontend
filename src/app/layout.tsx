@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import StoreProvider from './StoreProvider'
 import '../styles/globals.css'
 import StyledComponentsRegistry from '../lib/registry'
 
@@ -15,9 +16,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <StyledComponentsRegistry>
-          {children}
-        </StyledComponentsRegistry>
+        <StoreProvider>
+          <StyledComponentsRegistry>
+            {children}
+          </StyledComponentsRegistry>
+        </StoreProvider>
       </body>
     </html>
   )
