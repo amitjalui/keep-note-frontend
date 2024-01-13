@@ -9,6 +9,7 @@ import {
   UserProfilePlaceholderIcon,
 } from "./NavbarStyle";
 import { logo } from '@/assets';
+import DarkModeToggleSwitch from '../DarkModeToggleSwitch';
 
 
 const Navbar = () => {
@@ -23,6 +24,7 @@ const Navbar = () => {
           alt='logo'
           priority 
         />
+        <DarkModeToggleSwitch />
       </div>
 
       {/* SEARCH BAR */}
