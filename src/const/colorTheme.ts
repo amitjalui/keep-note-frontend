@@ -9,4 +9,4 @@ export const colorThemeNames = [
 export const defaultColorThemeName: typeof colorThemeNames[number] = 'light';
 
 // Cookie key for color theme
-export const colorThemeCookieName = 'myAppColorTheme';
+export const colorThemeCookieName = 'KeepNoteAppColorTheme';
