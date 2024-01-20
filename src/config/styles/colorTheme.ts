@@ -12,6 +12,11 @@ import {
   washedBlack,
   softPetals,
   translucentUnicorn,
+
+  softSilver,
+
+  deepSlate,
+  deepCharcoal
 } from "@/const/styles/colors";
 
 export const defaultColorThemeName: ColorThemeName = 'light';
@@ -26,6 +31,8 @@ export const lightTheme: ColorThemeStyle = {
     infoBg: softPetals,
     danger: coralRed,
     dangerBg: translucentUnicorn,
+    baseBgLevel1: softSilver,
+    baseBgLevel2: white
   },
 };
 
@@ -39,6 +46,8 @@ export const darkTheme: ColorThemeStyle = {
     infoBg: softPetals,
     danger: coralRed,
     dangerBg: translucentUnicorn,
+    baseBgLevel1: deepSlate,
+    baseBgLevel2: deepCharcoal
   },
 };
 

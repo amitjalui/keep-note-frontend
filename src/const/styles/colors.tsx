@@ -10,3 +10,13 @@ export const stonewallGrey = '#c3c2c1';
 export const astrograniteDebris = '#3b414a'; // dark theme border color
 export const aswadBlack = '#141519'; // dark theme background color
 export const washedBlack = '#202528'; // dark theme component background color
+
+// Light Mode
+export const softSilver = '#f0f3f5';
+
+// Dark Mode
+export const deepSlate = '#141519';
+export const deepCharcoal = '#0c0f11';
+
+
+// f2ecec  nav border

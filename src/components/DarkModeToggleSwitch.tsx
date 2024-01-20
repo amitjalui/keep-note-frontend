@@ -15,11 +15,6 @@ const DarkModeToggleSwitch = () => {
 
   const isDark = currentColorTheme === 'dark'
   
-  useEffect(() => {
-    console.log(isDark)
-
-  }, [isDark])
-
   const toggleDarkTheme = () => {
     isDark ? setColorTheme('light') : setColorTheme('dark')
   }

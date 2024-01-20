@@ -1,53 +1,65 @@
 import React from 'react'
 import {
-  Nav,
+  NavWrapper,
+  LogoWrapper,
   LogoImg,
-  SearchBar,
+  SearchBarWrapper,
   SearchBarInput,
-  UserProfile,
+  RightSideColumn,
+  UserProfileWrapper,
   UserProfileImage,
   UserProfilePlaceholderIcon,
+  RightMenuWrapper,
+  RightMenuIcon
 } from "./NavbarStyle";
 import { logo } from '@/assets';
+import { customIcons } from '@/assets';
 import DarkModeToggleSwitch from '../DarkModeToggleSwitch';
-
 
 const Navbar = () => {
   const tempUserEmptyData = "";
   
   return (
-    <Nav>
+    <NavWrapper>
       {/* LOGO OR HAMBURGER ICON */}
-      <div>
+      <LogoWrapper>
         <LogoImg 
           src={logo.logo3_3}
           alt='logo'
           priority 
         />
-        <DarkModeToggleSwitch />
-      </div>
+      </LogoWrapper>
 
       {/* SEARCH BAR */}
-      <SearchBar>
+      <SearchBarWrapper>
         <SearchBarInput 
           type='search' 
-          placeholder='Search' 
+          placeholder='Search'
         />
-      </SearchBar>
+      </SearchBarWrapper>
 
-      {/* USER PROFILE ICON */}
-      <UserProfile >
-        {
-          tempUserEmptyData 
-          ? <UserProfileImage 
-              src={logo.logo3_3} 
-              alt=""
-              priority
-            />
-          : <UserProfilePlaceholderIcon />
-        }
-      </UserProfile>
-    </Nav>
+      {/* Navbar Right Column */}
+      <RightSideColumn>
+        {/* USER PROFILE ICON */}
+        <UserProfileWrapper >
+          {
+            tempUserEmptyData 
+            ? <UserProfileImage 
+                src={logo.logo3_3} 
+                alt=""
+                priority
+              />
+            : <customIcons.ProfileIcon  />
+          }
+        </UserProfileWrapper>
+
+        {/* Menu */}
+        <RightMenuWrapper>
+          <customIcons.KebabMenuIcon />
+        </RightMenuWrapper>
+      </RightSideColumn>
+
+    </NavWrapper>
   )
 }
 

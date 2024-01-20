@@ -1,30 +1,53 @@
 import Image from 'next/image'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { FaUserCircle } from "react-icons/fa";
+import { customIcons } from '@/assets';
+import { ProfileIcon } from '@/assets/customIcons';
 
-export const Nav = styled.nav`
-  padding: 10px;
-  background-color: lightblue;
+export const displayFlexRow = css`
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+`
+
+export const circularImageStyles = css`
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: contain
+`
+
+export const NavWrapper = styled.nav`
+  ${displayFlexRow}
   margin: 5px;
   border-radius: 18px;
+  padding: 10px;
+  background-color: ${({ theme }) => theme.colors.baseBgLevel2};
+`
+
+export const LogoWrapper = styled.div`
+  ${displayFlexRow}
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ddd;
 `
 
 export const LogoImg = styled(Image)`
-  width: 35px;
-  height: 35px;
+  ${circularImageStyles}
   background-color: #ddd;
-  border-radius: 50%;
-  object-fit: contain;
 `
 
-export const SearchBar = styled.div`
+export const SearchBarWrapper = styled.div`
+  ${displayFlexRow}
   max-width: 80%;
   width: 60%;
   height: 35px;
-  background-color: red;
+  border: none;
   border-radius: 5px;
+  background-color: ${({ theme }) => theme.colors.baseBgLevel1};
 `
 
 export const SearchBarInput = styled.input`
@@ -33,35 +56,55 @@ export const SearchBarInput = styled.input`
   border: none;
   border-radius: 5px;
   padding: 10px 8px;
+  background-color: ${({ theme }) => theme.colors.baseBgLevel1};
+  color: ${({ theme }) => theme.colors.text};
   &:focus {
     outline: none;
   }
 `
 
-export const UserProfile = styled.span`
+export const RightSideColumn = styled.div`
+  ${displayFlexRow}
+`
+
+export const UserProfileWrapper = styled.span`
+  ${displayFlexRow}
   width: 35px;
   height: 35px;
   background-color: #ddd;
   display: flex;
   align-items: center;
-  border-radius: 50%
+  border-radius: 50%;
+  // background-color: red;
+  svg {
+    width: 100%;
+    height: 100%;
+    color: ${({ theme }) => theme.colors.text};
+    cursor: pointer;
+  }
 `
 
 export const UserProfileImage = styled(Image)`
-  width: 35px;
-  height: 35px;
-  font-size: 2rem;
-  border-radius: 50%;
-  color: white;
-  background-color: red;
+  ${circularImageStyles}
 `
 
-export const UserProfilePlaceholderIcon = styled(FaUserCircle)`
+export const RightMenuWrapper = styled.span`
+  ${displayFlexRow}
   width: 35px;
   height: 35px;
-  font-size: 2rem;
-  border-radius: 50%;
-  color: white;
+  margin: 0 5px 0 15px;
+  // background-color: red;
+  svg {
+    width: 85%;
+    height: 85%;
+    color: ${({ theme }) => theme.colors.text};
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  @media (max-width: 430px) {
+    display: none
+  } 
 `
 
 // Eg of dynamic style for img tag

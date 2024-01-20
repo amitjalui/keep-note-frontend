@@ -9,7 +9,9 @@ export type ColorThemeStyle = {
     info: string,
     infoBg: string,
     danger: string,
-    dangerBg: string
+    dangerBg: string,
+    baseBgLevel1: string,  // lighter then level 2
+    baseBgLevel2: string  // darker then level 1
   },
 };
 

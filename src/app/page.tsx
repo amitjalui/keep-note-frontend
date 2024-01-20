@@ -1,5 +1,6 @@
 'use client'
-import { Navbar } from "@/components";
+import { Navbar, LeftDrawer } from "@/components";
+import DarkModeToggleSwitch from "@/components/DarkModeToggleSwitch";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <aside>
           <nav>
             {/* Navigation elements for note folders */}
+            <DarkModeToggleSwitch />
           </nav>
         </aside>
 
@@ -24,6 +26,8 @@ export default function Home() {
       <footer className="mobile-footer">
         {/* FOR MOBILE ONLY IF NEEDED */}
       </footer>
+
+      <LeftDrawer />
     </>
   )
 }

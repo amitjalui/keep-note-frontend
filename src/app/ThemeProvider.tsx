@@ -16,8 +16,8 @@ export default function ThemeProviderComponent({
   useEffect(() => {
     const initializeTheme = async () => {
       await initColorTheme();
-      setThemeReady(true);
     };
+    setThemeReady(true);
 
     initializeTheme();
   }, [initColorTheme]);
