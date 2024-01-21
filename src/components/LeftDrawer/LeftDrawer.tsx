@@ -1,12 +1,22 @@
+'use client'
 import React from 'react';
-import { LeftDrawerContainer } from './LeftDrawerStyles'
+import { LeftDrawerContainer, Overlay } from './LeftDrawerStyles'
+import { useAppSelector, useAppDispatch } from '@/lib/hooks';
+import { selectLeftDrawerIsOpen, toggleLeftDrawer } from '@/lib/features/leftDrawer/leftDrawerSlice';
+
 
 const LeftDrawer = () => {
+  const currentLeftDrawer = useAppSelector(selectLeftDrawerIsOpen);
+  const dispatch = useAppDispatch();
+  
   return (
-    <LeftDrawerContainer>
-      LeftDrawer
-    </LeftDrawerContainer>
+    <>
+      <LeftDrawerContainer $isOpen={currentLeftDrawer} >
+        LeftDrawer
+      </LeftDrawerContainer>
+      <Overlay $isOpen={currentLeftDrawer} onClick={() => dispatch(toggleLeftDrawer())} />
+    </>
   )
 }
 
-export default LeftDrawer
+export default LeftDrawer;

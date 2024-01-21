@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import colorThemeSlice from './features/theme/colorThemeSlice';
+import leftDrawerSlice from './features/leftDrawer/leftDrawerSlice';
 
 // reducers
 export const makeStore = () => configureStore({
   reducer: {
-    colorTheme: colorThemeSlice
+    colorTheme: colorThemeSlice,
+    leftDrawer: leftDrawerSlice
   }
 });
 
