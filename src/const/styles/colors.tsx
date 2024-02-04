@@ -17,6 +17,7 @@ export const softSilver = '#f0f3f5';
 // Dark Mode
 export const deepSlate = '#141519';
 export const deepCharcoal = '#0c0f11';
+export const deepSlateGray = '#161d21';
 
 
 // f2ecec  nav border

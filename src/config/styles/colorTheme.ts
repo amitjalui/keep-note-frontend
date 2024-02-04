@@ -16,7 +16,8 @@ import {
   softSilver,
 
   deepSlate,
-  deepCharcoal
+  deepCharcoal,
+  deepSlateGray
 } from "@/const/styles/colors";
 
 export const defaultColorThemeName: ColorThemeName = 'light';
@@ -32,7 +33,8 @@ export const lightTheme: ColorThemeStyle = {
     danger: coralRed,
     dangerBg: translucentUnicorn,
     baseBgLevel1: softSilver,
-    baseBgLevel2: white
+    baseBgLevel2: white,
+    card: white,
   },
 };
 
@@ -47,7 +49,8 @@ export const darkTheme: ColorThemeStyle = {
     danger: coralRed,
     dangerBg: translucentUnicorn,
     baseBgLevel1: deepSlate,
-    baseBgLevel2: deepCharcoal
+    baseBgLevel2: deepCharcoal,
+    card: deepSlateGray,
   },
 };
 

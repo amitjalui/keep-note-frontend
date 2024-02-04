@@ -1,0 +1,75 @@
+.next/
+node_modules/
+public/
+src/
+|-- app/
+|   |-- layout.tsx
+|   |-- loading.tsx
+|   |-- page.tsx
+|   |-- pageStyles.tsx
+|   |-- StoreProvider.tsx
+|   |-- ThemeProvider.tsx
+|-- assets/
+|   |-- customIcons/
+|   |   |-- HamburgerMenuIcon.tsx
+|   |   |-- index.tsx
+|   |   |-- KebabMenuIcon.tsx
+|   |   |-- ProfileIcon.tsx
+|   |-- icons/
+|   |-- logo/
+|   |-- index.tsx
+|-- components/
+|   |-- Card/
+|   |   |-- Card.tsx
+|   |   |-- CardStyles.tsx
+|   |-- Grid/
+|   |   |-- Grid.tsx
+|   |   |-- GridStyles.tsx
+|   |-- LeftDrawer/
+|   |   |-- LeftDrawer.tsx
+|   |   |-- LeftDrawerStyles.tsx
+|   |-- Navbar/
+|   |   |-- Navbar.tsx
+|   |   |-- NavbarStyles.tsx
+|   |-- GlobalStyles.tsx
+|   |-- index.tsx
+|-- config/
+|   |-- styles/
+|   |   |-- colorTheme.ts
+|-- const/
+|   |-- styles/
+|   |   |-- colors.tsx
+|   |-- colorTheme.ts
+|   |-- drawer.ts
+|-- hooks/
+|   |-- useColorTheme.ts
+|-- lib/
+|   |-- features/
+|   |   |-- leftDrawer/
+|   |   |   |-- leftDrawerSlice.ts
+|   |   |-- notes/
+|   |   |-- theme/
+|   |   |   |-- colorThemeSlice.ts
+|   |-- hooks.ts
+|   |-- providers.ts
+|   |-- registry.tsx
+|   |-- store.ts
+|-- styles/
+|   |-- globals.css
+|-- types/
+|   |-- colorTheme.ts
+|   |-- leftDrawer.ts
+|-- utils/
+|   |-- cookie/
+|   |   |-- colorTheme.ts
+.babelrc
+.eslintrc.json
+.gitignore
+.swcrc
+next-env.d.ts
+next.config.js
+package-lock.json
+package.json
+README.md
+tsconfig.json
+
