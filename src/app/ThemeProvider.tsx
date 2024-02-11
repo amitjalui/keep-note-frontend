@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { ThemeProvider } from 'styled-components';
-import GlobalStyles from "@/components/GlobalStyles";
+import GlobalStyles from "@/styles/GlobalStyles";
 import useColorTheme from "@/hooks/useColorTheme";
 
 export default function ThemeProviderComponent({

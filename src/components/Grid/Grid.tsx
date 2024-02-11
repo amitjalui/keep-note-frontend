@@ -1,20 +1,37 @@
-import React from 'react'
+import { useState } from 'react'
+import Link from 'next/link'
 import Card from '../Card/Card'
 import { GridContainer } from './GridStyle'
+import EditNote from '../EditNote/EditNote';
 
 const Grid = () => {
+    
   return (
-    <GridContainer>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-    </GridContainer>
+    <>
+      <GridContainer>
+        <Link href="/edit-note">
+          <Card />
+        </Link>
+        <Link href="/edit-note">
+          <Card />
+        </Link>
+        <Link href="/edit-note">
+          <Card />
+        </Link>
+        <Link href="/edit-note">
+          <Card />
+        </Link>
+        <Link href="/edit-note">
+          <Card />
+        </Link>
+        <Link href="/edit-note">
+          <Card />
+        </Link>
+        <Link href="/edit-note">
+          <Card />
+        </Link>
+      </GridContainer>
+    </>
   )
 }
 

@@ -1,12 +1,9 @@
-import Image from 'next/image'
-import styled, { css } from 'styled-components'
-import { FaUserCircle } from "react-icons/fa";
-import { customIcons } from '@/assets';
-import { ProfileIcon } from '@/assets/customIcons';
+import Image from 'next/image';
+import styled, { css } from 'styled-components';
+import { FlexRow } from '@/styles/GlobalStyles';
 
 export const displayFlexRow = css`
-  display: flex;
-  flex-direction: row;
+  ${FlexRow}
   justify-content: space-between;
   align-items: center;
 `
@@ -75,7 +72,6 @@ export const UserProfileWrapper = styled.span`
   display: flex;
   align-items: center;
   border-radius: 50%;
-  // background-color: red;
   svg {
     width: 100%;
     height: 100%;
@@ -93,7 +89,6 @@ export const RightMenuWrapper = styled.span`
   width: 35px;
   height: 35px;
   margin: 0 5px 0 15px;
-  // background-color: red;
   svg {
     width: 85%;
     height: 85%;

@@ -4,12 +4,11 @@ export const CardContainer = styled.div`
   width: 100%;
   min-height: 180px;
   max-height: 280px;
-  // border: 1px solid #ddd;
+  border: none;
   border-radius: 10px;
   padding: 5px;
   background-color: ${({theme}) => theme.colors.card};
   overflow: hidden;
-
   cursor: pointer;
 `
 
