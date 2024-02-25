@@ -5,6 +5,32 @@ import { GridContainer } from './GridStyle'
 import EditNote from '../EditNote/EditNote';
 
 const Grid = () => {
+
+  const data1 = <>
+    CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+      CardContainer<br/>
+  </>
     
   return (
     <>
