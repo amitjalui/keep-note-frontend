@@ -1,14 +1,14 @@
+import Link from 'next/link'
 import { CardContainer } from './CardStyles'
 
-const Card = () => {
+const Card = ({data, he}) => {
   return (
-    <CardContainer $cardHeight={26} >
-      
+    <CardContainer $cardHeight={he} $dataa={data} >
+      <Link href="/" style={{height: "100%", display: "block"}}>
+        {data}
+      </Link>
     </CardContainer>
   )
 }
 
-export default Card
-
-
-// ref video: https://www.youtube.com/watch?v=baBvJDmziGQ&t=38s
+export default Card;

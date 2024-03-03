@@ -1,61 +1,23 @@
 import { useState } from 'react'
-import Link from 'next/link'
+import Link  from 'next/link'; 
 import Card from '../Card/Card'
 import { GridContainer } from './GridStyle'
 import EditNote from '../EditNote/EditNote';
 
 const Grid = () => {
 
-  const data1 = <>
-    CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-      CardContainer<br/>
-  </>
-    
+  const data1 = "dfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfddfgfffffffffffffffffffffffvbdbdfbdfbfd";
+
+  const data2 = [2000, 1000, 562, 413, 200, 100, 50, 2,];
+
   return (
     <>
       <GridContainer>
-        <Link href="/edit-note">
-          <Card />
-        </Link>
-        <Link href="/edit-note">
-          <Card />
-        </Link>
-        <Link href="/edit-note">
-          <Card />
-        </Link>
-        <Link href="/edit-note">
-          <Card />
-        </Link>
-        <Link href="/edit-note">
-          <Card />
-        </Link>
-        <Link href="/edit-note">
-          <Card />
-        </Link>
-        <Link href="/edit-note">
-          <Card />
-        </Link>
+        {
+          data2.map(s => (
+            <Card key={s} data={data1} he={s} />
+          ))
+        }
       </GridContainer>
     </>
   )

@@ -1,43 +1,33 @@
 import styled from "styled-components";
 
-// export const CardContainer = styled.div`
-//   width: 100%;
-//   min-height: 180px;
-//   max-height: 280px;
-//   border: none;
-//   border-radius: 10px;
-//   padding: 5px;
-//   background-color: ${({theme}) => theme.colors.card};
-//   overflow: hidden;
-//   cursor: pointer;
-// `
-
-export const CardHeader = styled.div`
-
-`
-
-// export const CardContainer = styled.div`
-//   width: 260px; /* Consistent card width */
-//   min-height: 30px; /* Adjust minimum height as needed */
-//   max-height: 476px;
-//   border-radius: 10px;
-//   padding: 5px;
-//   background-color: ${({ theme }) => theme.colors.card};
-//   overflow: hidden;
-//   cursor: pointer;
-
-//   /* ... other card styles */
-// `;
-
 interface CardContainerProps {
   $cardHeight: number;
 }
 
 export const CardContainer = styled.div<CardContainerProps>`
   margin: 0;
+  border-radius: 10px;
   padding: 0;
-  border-radius: 16px;
+  padding: 5px;
+  background-color: ${({ theme }) => theme.colors.card};
+  overflow: hidden;
+  cursor: pointer;
   background-color: green;
-
-  grid-row-end: ${({$cardHeight}) => ($cardHeight)};
+  word-wrap: break-word;
+  
+  grid-row: ${({$cardHeight}) => `span ${calculateGridSpan($cardHeight)}`};
 `;
+
+const calculateGridSpan = (height: number) => {
+  if (height > 562) {
+    return 3;
+  } else if (height > 413) {
+    return 2;
+  } else {
+    return 1;
+  }
+}
+
+export const CardHeader = styled.div`
+
+`

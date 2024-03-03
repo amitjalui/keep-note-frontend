@@ -14,7 +14,7 @@ export default function Home() {
       <main>
         <Grid />
       </main>
-      <footer className="mobile-footer">
+      <footer>
         {/* FOR MOBILE ONLY IF NEEDED */}
       </footer>
 
