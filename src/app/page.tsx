@@ -10,10 +10,13 @@ export default function Home() {
       <header>
         <Navbar />
       </header>
+
       <Test />
+
       <main>
         <Grid />
       </main>
+      
       <footer>
         {/* FOR MOBILE ONLY IF NEEDED */}
       </footer>
