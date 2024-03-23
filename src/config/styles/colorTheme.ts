@@ -17,7 +17,11 @@ import {
 
   deepSlate,
   deepCharcoal,
-  deepSlateGray
+  deepSlateGray,
+
+  petrolSlumber,
+  midnightTeal,
+  whisperingMist
 } from "@/const/styles/colors";
 
 export const defaultColorThemeName: ColorThemeName = 'light';
@@ -34,7 +38,7 @@ export const lightTheme: ColorThemeStyle = {
     dangerBg: translucentUnicorn,
     baseBgLevel1: softSilver,
     baseBgLevel2: white,
-    card: white,
+    // card: white,
   },
 };
 
@@ -50,13 +54,29 @@ export const darkTheme: ColorThemeStyle = {
     dangerBg: translucentUnicorn,
     baseBgLevel1: deepSlate,
     baseBgLevel2: deepCharcoal,
-    card: deepSlateGray,
+    // card: deepSlateGray,
   },
 };
 
+export const neutralTonesWithDepth: ColorThemeStyle = {
+  colors: {
+    text: white,
+    background: aswadBlack,
+    componentBackground: washedBlack,
+    border: astrograniteDebris,
+    info: vegetation,
+    infoBg: softPetals,
+    danger: coralRed,
+    dangerBg: translucentUnicorn,
+    baseBgLevel1: petrolSlumber,
+    baseBgLevel2: midnightTeal,
+    // card: midnightTeal,
+  }
+}
+
 export const themeNameStyleMap: { [key in ColorThemeName]: ColorThemeStyle} = {
   light: lightTheme,
-  dark: darkTheme,
+  dark: neutralTonesWithDepth,
 }
 
 export const defaultColorThemeStyle = themeNameStyleMap[defaultColorThemeName];

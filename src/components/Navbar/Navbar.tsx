@@ -13,7 +13,7 @@ import {
   UserProfilePlaceholderIcon,
   RightMenuWrapper,
   RightMenuIcon
-} from "./NavbarStyle";
+} from "./Navbar.styles";
 import { logo } from '@/assets';
 import { customIcons } from '@/assets';
 import DarkModeToggleSwitch from '../DarkModeToggleSwitch';

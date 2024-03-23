@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Link  from 'next/link'; 
 import Card from '../Card/Card'
-import { GridContainer } from './GridStyle'
+import { GridContainer } from './Grid.styles'
 import EditNote from '../EditNote/EditNote';
 
 const Grid = () => {

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styled, { css } from 'styled-components';
-import { FlexRow } from '@/styles/GlobalStyles';
+import { FlexRow } from '@/styles/Global.styles';
 
 export const displayFlexRow = css`
   ${FlexRow}

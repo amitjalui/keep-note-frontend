@@ -19,5 +19,7 @@ export const deepSlate = '#141519';
 export const deepCharcoal = '#0c0f11';
 export const deepSlateGray = '#161d21';
 
-
-// f2ecec  nav border
+// Neutral Tones with Depth.
+export const petrolSlumber = '#2A3942';
+export const midnightTeal = '#062E32';
+export const whisperingMist = '#E2E2E3';

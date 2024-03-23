@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { EditNoteContainer } from './EditNoteStyles'
+import { EditNoteContainer } from './EditNote.styles'
 
 const EditNote = () => { 
 

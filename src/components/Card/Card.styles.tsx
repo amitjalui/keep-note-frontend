@@ -1,6 +1,6 @@
 import styled, { } from "styled-components";
 import Link  from 'next/link'; 
-import { FlexColumn } from '@/styles/GlobalStyles';
+import { FlexColumn } from '@/styles/Global.styles';
 
 interface CardContainerProps {
   $cardHeight: number;

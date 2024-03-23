@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import { LeftDrawerContainer, Overlay } from './LeftDrawerStyles'
+import { LeftDrawerContainer, Overlay } from './LeftDrawer.styles'
 import { useAppSelector, useAppDispatch } from '@/lib/hooks';
 import { selectLeftDrawerIsOpen, toggleLeftDrawer } from '@/lib/features/leftDrawer/leftDrawerSlice';
 
