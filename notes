@@ -1,12 +1,20 @@
 .next/
+flows/
+|-- themeColorFlow.drawio
 node_modules/
 public/
 src/
 |-- app/
+|   |-- (pages)/
+|   |   |-- edit-note/
+|   |   |   |-- layout.tsx
+|   |   |   |-- page.tsx
+|   |-- api/
+|   |-- auth/
+|   |-- home/
 |   |-- layout.tsx
 |   |-- loading.tsx
 |   |-- page.tsx
-|   |-- pageStyles.tsx
 |   |-- StoreProvider.tsx
 |   |-- ThemeProvider.tsx
 |-- assets/
@@ -21,17 +29,20 @@ src/
 |-- components/
 |   |-- Card/
 |   |   |-- Card.tsx
-|   |   |-- CardStyles.tsx
+|   |   |-- Card.styles.tsx
+|   |-- EditNote/
+|   |   |-- EditNote.tsx
+|   |   |-- EditNote.styles.tsx
 |   |-- Grid/
 |   |   |-- Grid.tsx
-|   |   |-- GridStyles.tsx
+|   |   |-- Grid.styles.tsx
 |   |-- LeftDrawer/
 |   |   |-- LeftDrawer.tsx
-|   |   |-- LeftDrawerStyles.tsx
+|   |   |-- LeftDrawer.styles.tsx
 |   |-- Navbar/
 |   |   |-- Navbar.tsx
-|   |   |-- NavbarStyles.tsx
-|   |-- GlobalStyles.tsx
+|   |   |-- Navbar.styles.tsx
+|   |-- DarkModeToggleSwitch.tsx
 |   |-- index.tsx
 |-- config/
 |   |-- styles/
@@ -55,6 +66,7 @@ src/
 |   |-- registry.tsx
 |   |-- store.ts
 |-- styles/
+|   |-- Global.styles.css
 |   |-- globals.css
 |-- types/
 |   |-- colorTheme.ts
@@ -62,12 +74,14 @@ src/
 |-- utils/
 |   |-- cookie/
 |   |   |-- colorTheme.ts
+|-- styled.d.ts
 .babelrc
 .eslintrc.json
 .gitignore
 .swcrc
 next-env.d.ts
 next.config.js
+notes
 package-lock.json
 package.json
 README.md

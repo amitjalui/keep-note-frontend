@@ -4,6 +4,8 @@ import { FlexColumn } from '@/styles/Global.styles';
 
 interface CardContainerProps {
   $cardHeight: number;
+  $dataa: string;
+  $id: number
 }
 
 export const CardContainer = styled.div<CardContainerProps>`
@@ -31,16 +33,13 @@ const calculateGridSpan = (height: number) => {
 }
 
 export const LinkTag = styled(Link)`
-  color: ${({ theme }) => theme.colors.text};
-  display: block;
   position: absolute;
-  width: 100%;
   left: 0;
   right: 0;
-  z-index: 1;
   top: 0;
   bottom: 0;
-  background-color: #1b19190;
+  z-index: 1;
+  background-color: transparent;
 `;
 
 export const CardHeader = styled.div`
