@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Link  from 'next/link'; 
-import Card from '../Card/Card'
+import Card, {LinkedCard} from '../Card/Card'
 import { GridContainer } from './Grid.styles'
 import EditNote from '../EditNote/EditNote';
 
@@ -15,7 +15,7 @@ const Grid = () => {
       <GridContainer>
         {
           data2.map(s => (
-            <Card key={s} data={data1} he={s} />
+              <Card key={s} data={data1} he={s} />
           ))
         }
       </GridContainer>

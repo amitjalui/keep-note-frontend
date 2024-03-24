@@ -5,5 +5,5 @@ export const EditNoteContainer = styled.div`
   margin: 5px;
   border-radius: 18px;
   padding: 10px;
-  background-color: ${({theme}) => theme.colors.card};
+  /* background-color: ${({theme}) => theme.colors.card}; */
 `

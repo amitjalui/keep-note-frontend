@@ -4,44 +4,49 @@ import { CardContainer, LinkTag, CardHeader, HeaderInput, CardBody, CardFooter }
 const Card = ({data, he}) => {
   return (
     <CardContainer $cardHeight={he} $dataa={data}>
-      <CardHeader>
-        <HeaderInput />
-      </CardHeader>
-      <CardBody>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-        bodysccsc<br/>
-      </CardBody>
-      <CardFooter>
+          <CardHeader>
+            <HeaderInput />
+          </CardHeader>
+          <CardBody>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+            bodysccsc<br/>
+          </CardBody>
+          <CardFooter>
+            
+          </CardFooter>
+
+          <LinkTag href="/">
+          </LinkTag>
         
-      </CardFooter>
 
     </CardContainer>
   );
 }
+
 
 export default Card;

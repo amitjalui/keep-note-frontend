@@ -11,7 +11,7 @@ export default function Home() {
         <Navbar />
       </header>
 
-      {/* <Test /> */}
+      <Test />
 
       <main>
         <Grid />

@@ -12,11 +12,10 @@ export const CardContainer = styled.div<CardContainerProps>`
   border-radius: 10px;
   padding: 0;
   padding: 5px;
-  background-color: ${({ theme }) => theme.colors.card};
   overflow: hidden;
-  cursor: pointer;
   background-color: ${({ theme }) => theme.colors.baseBgLevel2};
   word-wrap: break-word;
+  position: relative;
   
   grid-row: ${({$cardHeight}) => `span ${calculateGridSpan($cardHeight)}`};
 `;
@@ -33,7 +32,16 @@ const calculateGridSpan = (height: number) => {
 
 export const LinkTag = styled(Link)`
   color: ${({ theme }) => theme.colors.text};
-`
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  background-color: #1b19190;
+`;
 
 export const CardHeader = styled.div`
   height: 50px;
@@ -57,16 +65,18 @@ export const HeaderInput = styled.input.attrs({
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.9px;
-  `;
+`;
 
 export const CardBody = styled.div`
   background-color: ${({ theme }) => theme.colors.baseBgLevel2};
   padding: 5px 10px;
   height: 100%;
   overflow: hidden;
-  `
+`
 
 export const CardFooter = styled.div`
-background-color: ${({ theme }) => theme.colors.baseBgLevel2};
+  width: 100%;
   height: 20px;
+  border: none;
+  padding: 5px 10px;
 `
