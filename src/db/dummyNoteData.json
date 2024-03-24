@@ -23,6 +23,46 @@
       "createdAt": "2024-03-22T15:30:00.000Z",
       "updatedAt": "2024-03-22T15:30:00.000Z",
       "category": "Ideas"
+    },
+    {
+      "id": 4,
+      "title": "Book Review",
+      "content": "Just finished reading 'The Hitchhiker's Guide to the Galaxy' by Douglas Adams. Hilarious and thought-provoking!",
+      "createdAt": "2024-03-21T12:00:00.000Z",
+      "updatedAt": "2024-03-21T12:00:00.000Z",
+      "category": "Entertainment"
+    },
+    {
+      "id": 5,
+      "title": "To-Do List",
+      "content": "- Finish this Next.js project  \n- Go for a run  \n- Call mom",
+      "createdAt": "2024-03-25T09:00:00.000Z",
+      "updatedAt": "2024-03-25T09:00:00.000Z",
+      "category": "Personal"
+    },
+    {
+      "id": 6,
+      "title": "Travel Itinerary",
+      "content": "**Day 1:** Arrive in Paris, check into hotel, explore Louvre Museum  \n**Day 2:** Visit Eiffel Tower, walk along Seine River  \n**Day 3:** Day trip to Versailles Palace",
+      "createdAt": "2024-03-20T18:30:00.000Z",
+      "updatedAt": "2024-03-20T18:30:00.000Z",
+      "category": "Travel"
+    },
+    {
+      "id": 7,
+      "title": "Movie Ideas",
+      "content": "- Watch the new sci-fi movie 'Interstellar'  \n- Catch up on the latest Marvel movie releases",
+      "createdAt": "2024-03-23T20:00:00.000Z",
+      "updatedAt": "2024-03-23T20:00:00.000Z",
+      "category": "Entertainment"
+    },
+    {
+      "id": 8,
+      "title": "Quote of the Day",
+      "content": "\"The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.\" - Helen Keller",
+      "createdAt": "2024-03-25T10:30:00.000Z",
+      "updatedAt": "2024-03-25T10:30:00.000Z",
+      "category": "Inspiration"
     }
   ]
 }
