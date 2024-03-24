@@ -1,12 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
 import colorThemeSlice from './features/theme/colorThemeSlice';
 import leftDrawerSlice from './features/leftDrawer/leftDrawerSlice';
+import notesDataSlice from '@/lib/features/notes/noteDataSlice'
 
 // reducers
 export const makeStore = () => configureStore({
   reducer: {
     colorTheme: colorThemeSlice,
-    leftDrawer: leftDrawerSlice
+    leftDrawer: leftDrawerSlice,
+    notesData: notesDataSlice,
   }
 });
 

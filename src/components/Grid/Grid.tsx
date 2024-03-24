@@ -14,8 +14,8 @@ const Grid = () => {
     <>
       <GridContainer>
         {
-          data2.map(s => (
-              <Card key={s} data={data1} he={s} />
+          data2.map((s, i) => (
+              <Card key={s} data={data1} he={s} id={i} />
           ))
         }
       </GridContainer>
