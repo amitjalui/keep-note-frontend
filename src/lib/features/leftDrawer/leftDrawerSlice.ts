@@ -22,10 +22,11 @@ const leftDrawerSlice = createSlice({
   }
 })
 
+// selectors
 export const selectLeftDrawerIsOpen = (state: RootState) => state.leftDrawer.isOpen;
-export default leftDrawerSlice.reducer
 
-// selector
+// reducer
+export default leftDrawerSlice.reducer;
 
-// action
+// actions
 export const { toggleLeftDrawer } = leftDrawerSlice.actions;
