@@ -1,11 +1,11 @@
 import styled, { } from "styled-components";
 import Link  from 'next/link'; 
 import { FlexColumn } from '@/styles/Global.styles';
+import { Note } from "@/types/notes";
 
 interface CardContainerProps {
   $cardHeight: number;
-  $dataa: string;
-  $id: number
+  $data: Note;
 }
 
 export const CardContainer = styled.div<CardContainerProps>`
@@ -23,6 +23,9 @@ export const CardContainer = styled.div<CardContainerProps>`
 `;
 
 const calculateGridSpan = (height: number) => {
+
+  console.log(height)
+  
   if (height > 562) {
     return 3;
   } else if (height > 413) {

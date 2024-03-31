@@ -1,12 +1,15 @@
 import styled, { createGlobalStyle, css } from "styled-components"
 
+
+
+
 export const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
     background-color: ${({ theme }) => theme.colors.baseBgLevel1};
     color: ${({ theme }) => theme.colors.text};
-    // font-family: 'Your preferred font stack', sans-serif;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
   }
 `
 

@@ -1,7 +1,13 @@
 'use client'
 
-import { Navbar, LeftDrawer, Grid } from "@/components";
+import { Navbar, Grid } from "@/components";
 import Test from "@/components/Test/Test";
+
+import dynamic from 'next/dynamic';
+
+const DynamicLeftDrawer = dynamic(() => import('@/components/LeftDrawer/LeftDrawer'), {
+  loading: () => <p>LOADING LeftDrawer</p>
+})
 
 export default function Home() {
   
@@ -16,12 +22,8 @@ export default function Home() {
       <main>
         <Grid />
       </main>
-      
-      <footer>
-        {/* FOR MOBILE ONLY IF NEEDED */}
-      </footer>
 
-      <LeftDrawer />
+      <DynamicLeftDrawer />
     </>
   )
 }

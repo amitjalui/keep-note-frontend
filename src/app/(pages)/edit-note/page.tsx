@@ -1,14 +1,18 @@
 'use client'
 
 import React from 'react'
-import EditNote from '@/components/EditNote/EditNote'
+import dynamic from 'next/dynamic'
 import Test from '@/components/Test/Test'
+
+const DynamicEditNote = dynamic(() => import('@/components/EditNote/EditNote'), {
+  loading: () => <p>LOADING EditNote</p>
+})
 
 const page = () => {
   return (
     <>
       <Test />
-      <EditNote />
+      <DynamicEditNote />
     </>
   )
 }
