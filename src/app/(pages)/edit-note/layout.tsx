@@ -1,6 +1,12 @@
 'use client'
 
-import { LeftDrawer, Navbar } from "@/components"
+import { Navbar } from "@/components"
+
+import dynamic from 'next/dynamic';
+
+const DynamicLeftDrawer = dynamic(() => import('@/components/LeftDrawer/LeftDrawer'), {
+  loading: () => <p>LOADING LeftDrawer</p>
+})
 
 export default function NoteLayout({
   children,
@@ -11,7 +17,7 @@ export default function NoteLayout({
     <>
       <Navbar />
       {children}
-      <LeftDrawer />
+      <DynamicLeftDrawer />
     </>
   )
 }
