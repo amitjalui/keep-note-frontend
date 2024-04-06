@@ -3,7 +3,7 @@
 import React from 'react';
 import { LeftDrawerContainer, Overlay } from './LeftDrawer.styles'
 import { useAppSelector, useAppDispatch } from '@/lib/hooks';
-import { selectLeftDrawerIsOpen, toggleLeftDrawer } from '@/lib/features/leftDrawer/leftDrawerSlice';
+import { selectLeftDrawerIsOpen, toggleLeftDrawer } from '@/lib/features/leftDrawer/leftDrawerSlice'
 
 
 const LeftDrawer = () => {

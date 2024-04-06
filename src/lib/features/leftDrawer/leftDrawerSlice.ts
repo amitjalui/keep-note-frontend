@@ -1,8 +1,8 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-import type { RootState } from "@/lib/store";
-import { DrawerType } from "@/types/leftDrawer";
-import { defaultDrawerValue } from "@/const/drawer";
+import type { RootState } from "@/lib/store"
+import { DrawerType } from "@/types/leftDrawer"
+import { defaultDrawerValue } from "@/const/drawer"
 
 type LeftDrawerState = {
   isOpen: DrawerType
