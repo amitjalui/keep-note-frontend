@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { CardContainer, LinkTag, CardHeader, HeaderInput, CardBody, CardFooter } from './Card.styles'
 import { Note } from '@/types/notes'
@@ -19,7 +21,7 @@ const Card: FC<CardProps> = ({ data }) => {
       </CardBody>
       <CardFooter>
       </CardFooter>
-      <LinkTag href={`/edit-note?id=${data.id}`}>
+      <LinkTag href={`/edit-note?id=${data.id}`} prefetch={true}>
       </LinkTag>
     </CardContainer>
   );
