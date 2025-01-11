@@ -38,7 +38,7 @@ export const lightTheme: ColorThemeStyle = {
     dangerBg: translucentUnicorn,
     baseBgLevel1: softSilver,
     baseBgLevel2: white,
-    // card: white,
+    card: white,
   },
 };
 
@@ -54,7 +54,7 @@ export const darkTheme: ColorThemeStyle = {
     dangerBg: translucentUnicorn,
     baseBgLevel1: deepSlate,
     baseBgLevel2: deepCharcoal,
-    // card: deepSlateGray,
+    card: deepSlateGray,
   },
 };
 
@@ -70,7 +70,7 @@ export const neutralTonesWithDepth: ColorThemeStyle = {
     dangerBg: translucentUnicorn,
     baseBgLevel1: petrolSlumber,
     baseBgLevel2: midnightTeal,
-    // card: midnightTeal,
+    card: midnightTeal,
   }
 }
 

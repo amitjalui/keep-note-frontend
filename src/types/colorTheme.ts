@@ -12,7 +12,7 @@ export type ColorThemeStyle = {
     dangerBg: string,
     baseBgLevel1: string,  // lighter then level 2
     baseBgLevel2: string,  // darker then level 1
-    // card: string
+    card: string
   },
 };
 

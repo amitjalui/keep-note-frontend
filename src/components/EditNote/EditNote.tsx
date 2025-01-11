@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { EditNoteContainer } from './EditNote.styles'
+import { NoteEditorContainer, NoteEditorInputFieldWrapper, NoteEditorInputField, NoteEditorPlaceholder } from './EditNote.styles'
 import { selectNotesData, notesData } from '@/lib/features/notes/noteDataSlice';
 import { useAppDispatch, useAppSelector } from '@/lib/hooks';
 
@@ -37,15 +37,17 @@ const EditNote = () => {
   };
 
   return (
-    <EditNoteContainer>
+    <NoteEditorContainer>
       <LexicalComposer initialConfig={initialConfig}>
-        <RichTextPlugin
-          contentEditable={<ContentEditable />}
-          placeholder={<div>Enter some text...</div>}
-          ErrorBoundary={LexicalErrorBoundary}
-        />
-        <HistoryPlugin />
-        <AutoFocusPlugin />
+        <NoteEditorInputFieldWrapper>
+          <RichTextPlugin
+            contentEditable={<NoteEditorInputField />}
+            placeholder={<NoteEditorPlaceholder>Enter some text...</NoteEditorPlaceholder>}
+            ErrorBoundary={LexicalErrorBoundary}
+          />
+          <HistoryPlugin />
+          <AutoFocusPlugin />
+        </NoteEditorInputFieldWrapper>
       </LexicalComposer>
       <button>
         Save
@@ -53,7 +55,7 @@ const EditNote = () => {
       <button>
         Cancel
       </button>
-    </EditNoteContainer>
+    </NoteEditorContainer>
   )
 }
 
