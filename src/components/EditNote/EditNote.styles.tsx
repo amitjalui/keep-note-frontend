@@ -31,7 +31,7 @@ export const NoteEditorInputField = styled(ContentEditable)`
 
 export const NoteEditorPlaceholder = styled.div`
   position: absolute;
-  color: black;
+  color: ${({ theme }) => theme.colors.text };
   z-index: 1000;
   top: 0;
 ` 

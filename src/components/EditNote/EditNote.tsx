@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { NoteEditorContainer, NoteEditorInputFieldWrapper, NoteEditorInputField, NoteEditorPlaceholder } from './EditNote.styles'
 import { selectNotesData, notesData } from '@/lib/features/notes/noteDataSlice';
 import { useAppDispatch, useAppSelector } from '@/lib/hooks';
+import Toolbar from '../Toolbar/Toolbar';
 
 import {$getRoot, $getSelection} from 'lexical';
 
@@ -39,6 +40,7 @@ const EditNote = () => {
   return (
     <NoteEditorContainer>
       <LexicalComposer initialConfig={initialConfig}>
+        <Toolbar />
         <NoteEditorInputFieldWrapper>
           <RichTextPlugin
             contentEditable={<NoteEditorInputField />}

@@ -1,3 +1,9 @@
+---
+
+If styled-components loads slow, use .bablerc
+
+Step1: create .babelrc file on the root dir.
+Step2: Paste this code and save file
 {
   "presets": ["next/babel"],
   "plugins": [
@@ -12,3 +18,5 @@
     ]
   ]
 }
+
+---
