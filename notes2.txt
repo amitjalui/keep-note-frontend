@@ -1,0 +1,6 @@
+Using Styled-Components with Next.js v13 (TypeScript):
+https://dev.to/rashidshamloo/using-styled-components-with-nextjs-v13-typescript-2l6m#:~:text=when%20using%20styled%2Dcomponents%20with,before%20the%20styles%20are%20applied
+OR
+https://nextjs.org/docs/app/building-your-application/styling/css-in-js#styled-components
+
+dark mode: https://dev.to/koyablue/dark-mode-with-nextjs-typescript-styled-components-and-redux-toolkit-3863
