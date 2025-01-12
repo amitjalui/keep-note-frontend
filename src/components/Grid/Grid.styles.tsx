@@ -1,8 +1,9 @@
 import Link  from 'next/link'; 
 import styled, { css } from "styled-components";
+import { layoutStyles } from '@/styles';
 
 export const gridColumns = () => css`
-  display: grid;
+  ${layoutStyles.grid.base}
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 10px;
 

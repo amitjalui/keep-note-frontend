@@ -1,7 +1,7 @@
 import styled, { } from "styled-components";
-import Link  from 'next/link'; 
-import { FlexColumn } from '@/styles/Global.styles';
+import Link  from 'next/link';
 import { Note } from "@/types/notes";
+import { layoutStyles } from '@/styles';
 
 interface CardContainerProps {
   $cardHeight: number;
@@ -9,7 +9,8 @@ interface CardContainerProps {
 }
 
 export const CardContainer = styled.div<CardContainerProps>`
-  ${FlexColumn}
+  ${layoutStyles.flex.base}
+  ${layoutStyles.flex.vertical}
   margin: 0;
   border-radius: 10px;
   padding: 0;

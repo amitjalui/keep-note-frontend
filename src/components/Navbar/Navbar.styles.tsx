@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import styled, { css } from 'styled-components';
-import { FlexRow } from '@/styles/Global.styles';
+import { layoutStyles } from '@/styles';
 
 export const displayFlexRow = css`
-  ${FlexRow}
-  justify-content: space-between;
-  align-items: center;
+  ${layoutStyles.flex.base}
+  ${layoutStyles.flex.horizontal}
+  ${layoutStyles.flex.alignments.between}
 `
 
 export const circularImageStyles = css`
